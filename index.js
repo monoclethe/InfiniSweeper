@@ -150,8 +150,8 @@ function draw () {
             
             if (cells.includes(tileID) && !flagged.includes(tileID)) {
                 if (visibility[tileID] == true) {
-                    rectFill(drawX - tileDimension/2, drawY - tileDimension/2, drawX + tileDimension/2, drawY + tileDimension/2, "#111120");
-                    rectOutline(renderTileX * tileDimension - tileDimension/2 + cameraPosNormalized[0] * tileDimension, renderTileY * tileDimension - tileDimension/2 + cameraPosNormalized[1] * tileDimension, renderTileX * tileDimension + tileDimension/2  + cameraPosNormalized[0] * tileDimension, renderTileY * tileDimension + tileDimension/2 + cameraPosNormalized[1] * tileDimension, "#1a1a32");
+                    rectFill(drawX - tileDimension/2, drawY - tileDimension/2, drawX + tileDimension/2, drawY + tileDimension/2, "#222230");
+                    rectOutline(renderTileX * tileDimension - tileDimension/2 + cameraPosNormalized[0] * tileDimension, renderTileY * tileDimension - tileDimension/2 + cameraPosNormalized[1] * tileDimension, renderTileX * tileDimension + tileDimension/2  + cameraPosNormalized[0] * tileDimension, renderTileY * tileDimension + tileDimension/2 + cameraPosNormalized[1] * tileDimension, "#3c3c54");
                     drawCellValue(types[tileID], drawX , drawY);
                     if (types[tileID] == 9) {
                         openedMine = true;
