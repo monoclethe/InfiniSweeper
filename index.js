@@ -396,6 +396,9 @@ document.addEventListener("keydown", function (event) {
             draw();
     } else if (event.key == "f") {
         processRightClick();
+    } else if (event.key == "d") {
+        clickScroll = false;
+        processClick();
     }
     } catch (err) {
         alert(err);
