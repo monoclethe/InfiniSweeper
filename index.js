@@ -383,3 +383,19 @@ function difficultyBar () {
         dDisp.innerHTML = "Extreme";
     }
 }
+
+document.addEventListener("keydown", function (event) {
+    try {
+    if (event.key == "ArrowDown" ) {
+            scale *= 1.25;
+            tileDimension = canvas.width/scale;
+            draw();
+    } else if (event.key == "ArrowUp") {
+            scale = scale / 1.25;
+            tileDimension = canvas.width/scale;
+            draw();
+    }
+    } catch (err) {
+        alert(err);
+    }
+})
