@@ -1,0 +1,67 @@
+img { 
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+body {
+    background-color: #111120;
+}
+
+header {
+    color: white;
+    font-family: sans-serif;
+    border-bottom: 1px solid white;
+    height: 5vh;
+    font-size: 4vh;
+    padding: 0.5vh;
+    padding-bottom: 0;
+    line-height: 4vh;
+    box-sizing: border-box;
+}
+
+header input {
+    color: white;
+    border: 1px solid transparent;
+}
+header input:hover {
+    border: 1px solid white;
+    border-radius: 0.5vh;
+}
+header input:active {
+    color: purple;
+    border: 1px solid purple;
+}
+canvas {
+    width: 100%;
+    height: 95vh;
+    display: block;
+}
+
+#endPopup {
+    color: white;
+    font-family: sans-serif;
+    background-color: rgba(30, 30, 30, 0.75);
+    width: 50vw;
+    left: 25vw;
+    top: 10vh;
+    position: absolute;
+    padding: 1vw;
+    display: none;
+}
+
+h1 {
+    font-size: xx-large;
+    border-bottom: 1px solid white;
+    margin-bottom: 1vw;
+}
+
+input {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
