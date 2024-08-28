@@ -394,6 +394,8 @@ document.addEventListener("keydown", function (event) {
             scale = scale / 1.25;
             tileDimension = canvas.width/scale;
             draw();
+    } else if (event.key == "f") {
+        processRightClick();
     }
     } catch (err) {
         alert(err);
