@@ -381,6 +381,8 @@ function difficultyBar () {
         dDisp.innerHTML = "Hard";
     } else if (difficulty <= 0.20) {
         dDisp.innerHTML = "Extreme";
+    } else if (difficulty <= 0.24) {
+        dDisp.innerHTML = "Impossible";
     }
 }
 
